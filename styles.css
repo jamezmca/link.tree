@@ -1,0 +1,148 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: white;
+    position: relative;
+
+    justify-content: center;
+    gap: 42px;
+    padding: 40px 14px;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.backgroundImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+}
+
+.backgroundImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    text-align: center;
+    gap: 14px;
+}
+
+body,
+header,
+main,
+.backgroundImg {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    max-width: 140px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 100%;
+    padding-bottom: 8px;
+}
+
+header mark {
+    border-radius: 4px;
+    padding: 2px 4px;
+    background: white;
+    color: #0f172a;
+}
+
+header h1 {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+main {
+    gap: 14px;
+}
+
+.link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    width: 420px;
+    max-width: 100%;
+    margin: 0 auto;
+    transition-duration: 200ms;
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    border-color: skyblue;
+}
+
+.linkBackground {
+    position: absolute;
+    inset: 0;
+    background: #020617;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.link p {
+    font-size: 0.8em;
+
+}
+
+@media (min-width: 640px) {
+    body {
+        gap: 64px;
+        padding: 80px 14px;
+    }
+
+    header,
+    main {
+        gap: 24px;
+    }
+
+    header img {
+        max-width: 200px;
+        padding-bottom: 24px;
+    }
+
+    header h1 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    header p {
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+
+    .link p {
+        font-size: 1.1em;
+    }
+
+}

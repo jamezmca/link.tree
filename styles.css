@@ -56,7 +56,7 @@ header img {
     width: 100%;
     margin: 0 auto;
     border-radius: 100%;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 header mark {
